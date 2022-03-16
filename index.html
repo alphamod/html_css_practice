@@ -8,7 +8,7 @@
 
   <span>some inline text</span>
 
-  <video controls autoplay muted>
+  <!-- <video controls autoplay muted>
     <source src="./video.mp4" />
     <source src="./video.mov" />
     Video not supported in your browser.
@@ -18,7 +18,7 @@
     <source src="./audio.mp3" />
     <source src="./audio.wav" />
     Audio is not supported in your browser.
-  </audio>
+  </audio> -->
 
   <ul>
     <li>item 1</li>
@@ -37,7 +37,7 @@
   <form>
     <div>
       <label for="username">Username: </label>
-      <input name="username" type="text" required placeholder="enter your username" value="Syed Salman" />
+      <input name="username" type="text" required placeholder="enter your username" />
     </div>
 
     <div>
@@ -45,10 +45,49 @@
       <input name="password" type="password" placeholder="Password here" />
     </div>
     <div>
-      <label for="email">Email: </label>
-      <input name="email" type="email" value="" />
+      <label for="user_email">Email: </label>
+      <input name="user_email" type="email" value="" />
     </div>
-    <button>Sign In</button>
+    <div>
+      <input type="number" placeholder="Enter the number" max="5000" min="50" value="765" readonly />
+    </div>
+    <div>
+      <label for="languages">Languages: </label>
+      <input type="checkbox" name="languages" value="c" /> <span>C</span>
+      <input type="checkbox" name="languages" value="c++" checked />
+      <span>C++</span>
+      <input type="checkbox" name="languages" value="java" />
+      <span>Java</span>
+    </div>
+
+    <div>
+      <label for="profession">Profession: </label>
+      <input type="radio" name="profession" value="student" />
+      <span>Student</span>
+      <input type="radio" name="profession" value="employed" />
+      <span>Employed</span>
+      <input type="radio" name="profession" value="unemployed" />
+      <span>Unemployed</span>
+    </div>
+    <!-- <input type="date"> -->
+    <div>
+      <label for="country">Country</label>
+      <select name="country">
+        <option value="IND">India</option>
+        <option value="SNG">Singapore</option>
+        <option value="USA">US</option>
+      </select>
+    </div>
+    <div>
+      <label for="about">Tell us briefly about yourself</label>
+      <textarea name="about" wrap="hard"></textarea>
+    </div>
+    <div>
+      <label for="resume">Resume</label>
+      <input name="resume" type="file" accept=".db">
+    </div>
+
+    <input type="submit" value="Create Account">
   </form>
   <!-- the form ends here -->
 </body>
