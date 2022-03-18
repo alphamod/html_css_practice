@@ -17,4 +17,22 @@ checkbox : I accept the terms and conditions
 
 button: create my account
 
+R G B
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A
+B
+C
+D
+E
+F
 
