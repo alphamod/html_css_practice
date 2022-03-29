@@ -17,6 +17,11 @@ checkbox : I accept the terms and conditions
 
 button: create my account
 
+3 ways of applying css:
+1. inline styling
+2. using a style tag
+3. Using an external css file.
+
 R G B
 
 0

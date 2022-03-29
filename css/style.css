@@ -1,0 +1,43 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+.border{
+  border: solid 2px black;
+  margin: 0.25em;
+}
+
+.outer-div{
+  background-color: brown;
+  height: 400px;
+  width: 400px;
+}
+
+.inner-div{
+  background-color: darkolivegreen;
+  height: 50px;
+  width: 50px;
+  position: fixed;  /* other alternate values are: static, absolute, relative, & sticky.*/
+  bottom: 150px;
+  right: 300px;
+}
+
+.container{
+  background-color: aqua;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.item{
+  margin: 5px;
+}
+
+.child{
+  height: 50px;
+  width: 50px;
+  background-color: blueviolet;
+}
+
