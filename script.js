@@ -14,3 +14,8 @@
 //   .then((response) => response.text())
 //   .then((result) => console.log(result));
 // };
+
+
+var a = "24is76is54=yjistdu=hisgfjisht"
+var one = [23, "apple", 1, 1000, 653]
+console.log(a.split("is"));
