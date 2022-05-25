@@ -1,48 +1,34 @@
+// ProFiLe
+// 1
+// 2
 
-// operators  + - * / % ++ -- ** =
+var userInput = ["PrOFiLe", "1", "2"]; 
+ //Profile
 
-// ==, !=, < , > , <=, >=, ===, !==
+var strArray = userInput[0].split("");
+// ["P", "r", "o", "F", "i", "L", "e"] 
+var indextoStart = parseInt(userInput[2])-1;  // 3
 
-// AND &&,  OR ||, NOT !
+var slicedArray = strArray.slice(indextoStart); // strArray.slice(3) ===> [ 'F', 'i', 'L', 'e' ] ===>  F --> f
+var omittedArray = strArray.slice(0, indextoStart);// strArray.slice(0, 3) ===> ['P', 'r', 'o']
 
-// console.log("abdul" != "abdul");
-
-var firstName = "Abdul";
-var timeOfDay = "noon";
-var a = 100;
-var b = "100a";
-var c = a*b;
-var n = null;
-// var c = false;
-var d = false;
-var firstName = prompt("Enter first name:");
-var lastName = prompt("Enter last name:");
-var s = ""  // falsy value
-var r = "nhgfc"; //true
-var g = 0; // falsy value    // 0, "", null, undefined, NaN, false   - falsy values
-
-if (!firstName || !lastName){
-    if(!firstName && !lastName){
-        firstName = prompt("please enter first name:");
-        lastName = prompt("please enter last name:");
-    } else if(!lastName){
-        lastName = prompt("please enter last name:")
-    }else { 
-        firstName = prompt("please enter first name:")
+var convertedArray = [];
+for(i=0; i<slicedArray.length; i++){
+    if(userInput[1]=== "1"){
+        convertedArray.push(slicedArray[i].toLowerCase()); // ['f', 'i', 'l', 'e']
+    }else{
+        convertedArray.push(slicedArray[i].toUpperCase());
     }
-} else {
-    alert("full name is "+ firstName+ " "+ lastName);
-};
+}
+ 
+var finalOutput = omittedArray.concat(convertedArray).join("");
 
-// if (timeOfDay == "morning"){
-//     console.log("Good Morning"+ ", "+ firstName+"!");
-// } else if(timeOfDay == "evening"){
-//     console.log("Good Evening, "+ firstName+"!");
-// }else if(timeOfDay == "noon"){
-//     console.log("Good noon, "+ firstName+"!");
-// } else if(timeOfDay == "night"){
-//     console.log("Good night, "+ firstName+"!");
-// }
-//  else{
-//     console.log("Hello, "+ firstName+"!")
+console.log({finalOutput});
+
+
+
+// if (userInput[1]==="1"){
+//     // convert into Uppercase;
+// } else{
+//     // convert in to lowercase
 // }

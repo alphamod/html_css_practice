@@ -48,3 +48,21 @@ console.log(sub_array)
 // other.pop();
 
 // // console.log("other", other);
+
+
+var userInput = ["{([[{}]])}"]
+var balancer = 0; //-1
+var inputArray = userInput[0].split("");
+
+    for (i=0; i<inputArray.length; i++){
+        if (inputArray[i] === "{" || inputArray[i] === "(" || inputArray[i]==="["){
+            balancer++;
+        } else {
+            balancer--;
+        }
+    }
+    if(balancer === 0){
+        console.log("1");
+    }else{
+        console.log("0");
+    };
