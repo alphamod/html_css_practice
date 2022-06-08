@@ -1,34 +1,36 @@
-// ProFiLe
-// 1
-// 2
+// function fiveMultiplier(x) {
+//   console.log("I have", x);
+//   return x * 5;
+// }
 
-var userInput = ["PrOFiLe", "1", "2"]; 
- //Profile
+// fiveMultiplier("some value"); //
 
-var strArray = userInput[0].split("");
-// ["P", "r", "o", "F", "i", "L", "e"] 
-var indextoStart = parseInt(userInput[2])-1;  // 3
+// callback is a function given as parameter to another function
 
-var slicedArray = strArray.slice(indextoStart); // strArray.slice(3) ===> [ 'F', 'i', 'L', 'e' ] ===>  F --> f
-var omittedArray = strArray.slice(0, indextoStart);// strArray.slice(0, 3) ===> ['P', 'r', 'o']
-
-var convertedArray = [];
-for(i=0; i<slicedArray.length; i++){
-    if(userInput[1]=== "1"){
-        convertedArray.push(slicedArray[i].toLowerCase()); // ['f', 'i', 'l', 'e']
+function toComparePasswords(userNameFromUser, passwordFromUser, callback) {
+    var dbResult = callback()
+    var username = dbResult.username;
+    var password = dbResult.password;
+    
+    if (userNameFromUser == username && passwordFromUser == password){
+        console.log("Login success! Welcome",userNameFromUser,"!")
     }else{
-        convertedArray.push(slicedArray[i].toUpperCase());
+        console.log("Wrong credentials, Login failed!!")
     }
 }
- 
-var finalOutput = omittedArray.concat(convertedArray).join("");
 
-console.log({finalOutput});
+function getPasswordFromDB() {
+  // inside db
+  var username = "syedsalman";
+  var password = "12345";
+  // =============db ends======
 
+  var dbOutput = {
+    "username": username,
+    "password": password
+  }
 
+  return dbOutput;
+}
 
-// if (userInput[1]==="1"){
-//     // convert into Uppercase;
-// } else{
-//     // convert in to lowercase
-// }
+toComparePasswords("syedsalman","12345",getPasswordFromDB)
