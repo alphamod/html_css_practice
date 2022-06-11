@@ -102,3 +102,100 @@ console.log({finalOutput});
 // } else{
 //     // convert in to lowercase
 // }
+
+
+// function fiveMultiplier(x) {
+//   console.log("I have", x);
+//   return x * 5;
+// }
+
+// fiveMultiplier("some value"); //
+
+// callback is a function given as parameter to another function
+
+function toComparePasswords(userNameFromUser, passwordFromUser, callback) {
+    var dbResult = callback()
+    var username = dbResult.username;
+    var password = dbResult.password;
+    
+    if (userNameFromUser == username && passwordFromUser == password){
+        console.log("Login success! Welcome",userNameFromUser,"!")
+    }else{
+        console.log("Wrong credentials, Login failed!!")
+    }
+}
+
+function getPasswordFromDB() {
+  // inside db
+  var username = "syedsalman";
+  var password = "12345";
+  // =============db ends======
+
+  var dbOutput = {
+    "username": username,
+    "password": password
+  }
+
+  return dbOutput;
+}
+
+toComparePasswords("syedsalman","12345",getPasswordFromDB)
+
+// Callback
+
+function login(username, password, comparingFunction) {
+  
+    setTimeout(function(){
+      // ===========
+     var dbCredentials = {
+       username: "johndoe",
+       password: "12345"
+     }
+     // ===========
+     comparingFunction(username, password, dbCredentials)
+    }, 2000);
+   
+   
+   }
+   
+   var checkCredentails = function (username, password, dbCredentials){
+     if (username === dbCredentials.username && password === dbCredentials.password){
+       console.log("Login Success! Welcome User");
+     }else{
+       console.log("Wrong username or password. Try again!")
+     }
+   
+     // === go and fetch other profile data from the DB;
+     // ====send the info back to the user frontend.
+   } 
+   
+   
+   login("johndoe", "12345", checkCredentails);
+   
+   
+  //  default param values
+
+  function productOfFive(num = 0, num2 = 5){
+    return num*num2;
+  };
+  
+  
+  console.log(productOfFive(5));
+
+
+  // DOM
+
+  function getUserInfo(){
+    var responseFromBackend = {
+      username: "syedsalman",
+      name: "Syed Salman",
+      profilePic: "https://cdn.dribbble.com/users/2878951/screenshots/14013747/media/603f0b853c409547dfa51cba996f375c.png?compress=1&resize=1600x1200&vertical=top",
+    }
+    
+    document.getElementById("username").innerText=responseFromBackend.name;
+    
+    var img = document.querySelector("#profilePic");
+    
+    img.src = responseFromBackend.profilePic;
+    document.querySelector("#loginBtn").style.display="none"
+  }
