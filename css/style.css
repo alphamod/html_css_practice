@@ -1,21 +1,18 @@
-body{
-    margin: 0;
-    padding: 0;
+.nafees{
+    float: left;
+    /* background-color: blue;
+    color: white; */
+    padding: 10px;
+    margin: 10px auto;
+    border-left: 2px blue solid;
 }
 
-.logo{
-    width:100px;
-    height: auto;
+.naseem{
+    border: solid 10px black;
+    padding: 10px;
+    margin: 5px;
+    float:left;
+    /* color: white; */
+    /* background-color: brown; */
 }
 
-.jumbotron{
-    height: 400px;
-}  
-
-.big-font{
-    font-size: larger;
-}
-
-.switch:hover{
-    display: none !important;
-}
