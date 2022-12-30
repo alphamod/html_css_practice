@@ -1,36 +1,35 @@
-<!DOCTYPE html> <!-- HTML version 5-->
-<html lang="en">
+<!DOCTYPE html> <!--HTML 5-->
+<html>
 <head>
-    <!-- Cascade Styling Sheet -->
-
-    <title>Document</title>
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <style>
-        h1, h2, span{
-            color: pink;
-            background-color: brown;
-        }
-        .foo-bar{
-            color: green;
-            background-color: aqua;
-            text-align: center;
-        }
-        #bar2{
-            color: red;
-            background-color: yellowgreen;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
 </head>
 <body>
-    <!-- <h1 style="color: red; background-color: blue;">Hello World!</h1> inline styling -->
-    <h1 >Hello World!</h1> <!-- inline styling-->
+    <form>
+        <div>
+            <label for="country">Country</label>
+           <select name="country">
+            <option value="IN">India</option>
+            <option value="UK">United Kingdom</option>
+            <option selected value="FR">France</option>
+            <option value="GR">Germany</option>
+           </select> 
+        </div>
+        <br>
+        <div>
+            <label for="cv">Upload CV: </label>
+            <input name="cv" type="file" accept=".pdf" multiple>
+        </div>
 
-    <h1 class="foo-bar bar-foo">Foo Bar</h1>
-    <h1 id="bar2">Foo Bar2</h1>
-    <h2 class="foo-bar">,ljhgljh</h2>
-    <h1>kjhfljhgv Bar</h1>
-    <span id="">jhgljgvb</span>
-    
+        <!-- <input type="date" name="date">
+        <input type="time" name="time"> -->
         
+
+        <!-- <input type="button" value="Sign In">  -->
+        <!-- <button>Login</button> -->
+        <input type="submit" value="Sign Up">
+    </form>
 </body>
 </html>
