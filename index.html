@@ -1,35 +1,29 @@
-<!DOCTYPE html> <!--HTML 5-->
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web</title>
-</head>
-<body>
-    <form>
-        <div>
-            <label for="country">Country</label>
-           <select name="country">
-            <option value="IN">India</option>
-            <option value="UK">United Kingdom</option>
-            <option selected value="FR">France</option>
-            <option value="GR">Germany</option>
-           </select> 
-        </div>
-        <br>
-        <div>
-            <label for="cv">Upload CV: </label>
-            <input name="cv" type="file" accept=".pdf" multiple>
-        </div>
-
-        <!-- <input type="date" name="date">
-        <input type="time" name="time"> -->
-        
-
-        <!-- <input type="button" value="Sign In">  -->
-        <!-- <button>Login</button> -->
-        <input type="submit" value="Sign Up">
-    </form>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/2096b1ae53.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calc-head">
+        <!-- <i class="fa-solid icons fa-bars"></i> -->
+        <span class="head-text">Standard</span>
+        <!-- <i class="fa-solid icons fa-arrow-up-right-from-square"></i> -->
+      </div>
+      <div class="calc-display"></div>
+      <div class="calc-keys"></div>
+    </div>
+  </body>
 </html>
+
