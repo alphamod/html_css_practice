@@ -3,27 +3,83 @@
   <head>
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script
-      src="https://kit.fontawesome.com/2096b1ae53.js"
-      crossorigin="anonymous"
-    ></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2096b1ae53.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="calculator">
       <div class="calc-head">
-        <!-- <i class="fa-solid icons fa-bars"></i> -->
+        <img src="./hamburger-svgrepo-com.svg" class="heading-icon" alt="" />
         <span class="head-text">Standard</span>
-        <!-- <i class="fa-solid icons fa-arrow-up-right-from-square"></i> -->
+        <img src="./resize-page-svgrepo-com.svg" class="heading-icon" alt="" />
       </div>
-      <div class="calc-display"></div>
-      <div class="calc-keys"></div>
+      <div class="calc-display">
+        <!-- <input type="number" value="0"> -->
+        0
+      </div>
+      <div class="calc-keys">
+        <div class="m-keys">
+          <button class="btn gray-btn">MC</button>
+          <button class="btn gray-btn">MR</button>
+          <button class="btn">M+</button>
+          <button class="btn">M-</button>
+          <button class="btn">MS</button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn">%</button>
+          <button class="big-btn">CE</button>
+          <button class="big-btn">C</button>
+          <button class="big-btn red">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn italic btn-7"><span class="sup">1</span>/x</button>
+          <button class="big-btn btn-7">x<span class="sup">2</span></button>
+          <button class="big-btn btn-7"><span class="sup"><i class="fa-solid two fa-2"></i></span><i class="fa-solid fa-square-root-variable"></i></button>
+          <button class="big-btn btn-7"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn">7</button>
+          <button class="big-btn">8</button>
+          <button class="big-btn">9</button>
+          <button class="big-btn btn-7">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn">4</button>
+          <button class="big-btn">5</button>
+          <button class="big-btn">6</button>
+          <button class="big-btn btn-7">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn">1</button>
+          <button class="big-btn">2</button>
+          <button class="big-btn">3</button>
+          <button class="big-btn btn-7">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="normal-keys">
+          <button class="big-btn italic"><span class="sup">+</span>/-</button>
+          <button class="big-btn">0</button>
+          <button class="big-btn">.</button>
+          <button class="big-btn equals">
+            <i class="fa-solid fa-equals"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
-
