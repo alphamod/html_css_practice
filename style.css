@@ -1,0 +1,137 @@
+
+body{
+    --dark-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    --badge-color: #901d1a;
+}
+.newspaper{
+    margin: 0 6em ;
+    padding: 2em;
+    border: 0.5px solid black;
+}
+.page-heading{
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px black solid; */
+}
+.head-text{
+    font-weight: 800;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+.header-text{
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    padding: 0.5em 0;
+}
+
+.footer{
+    border-top: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title{
+    font-size: 6.75em;
+    text-align: center;
+    margin: 0.01em 0;
+
+}
+.badge{
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+    background-color: var(--badge-color);
+    padding: 0.25em;
+    padding-right: 1.5em;
+    color: #ffffff;
+}
+.article-text{
+    margin-right: 1em;
+}
+.top-body{
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+}
+.caption-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -4em;
+
+}
+.page-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #ffffff;
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 13em;
+    right: 10em;
+}
+.page-icon-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #ffffff;
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1em;
+    left: 16em;
+    margin-top: -5em;
+}
+.caption{
+    width: 40%;
+    position: relative;
+    bottom: 2em;
+    right: 2em;
+    text-align: right;
+    color: #ffffff;
+}
+.bottom-col{
+    text-align: justify;
+    margin-right: 2em;
+}
+.sub-title{
+    text-transform: capitalize;
+}
+.bottom-body{
+    display: flex;
+    justify-content: space-between;
+}
+.red-caption{
+    color: var(--badge-color);
+    text-align: center;
+    font-size: 1.5em;
+    border-top: 2px solid black;
+    padding-top: 0.5em;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202d71;
+}
+.brand-name{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    width: 60%
+}
+.menu-list a{
+    color: #ffffff;
+}
